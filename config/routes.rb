@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
-  get 'words/index'
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  # get word'words/index'
+  # get '/words', to: 'words#index'
+  resources :words do
+    collection do
+      post :confirm
+    end
+  end
 end
