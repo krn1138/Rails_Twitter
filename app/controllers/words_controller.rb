@@ -2,7 +2,6 @@ class WordsController < ApplicationController
   before_action :set_word, only: [:show, :edit, :update, :destroy]
   def index
     @words = Word.all
-
   end
 
   def new
@@ -10,7 +9,6 @@ class WordsController < ApplicationController
   end
 
   def create
-    # binding.pry
     @word = Word.new(word_params)
     if params[:back]
       render :new
@@ -24,16 +22,12 @@ class WordsController < ApplicationController
   end
 
   def show
-    # @word = Word.find(params[:id])
   end
 
   def edit
-    # @word = Word.find(params[:id])
   end
 
   def update
-    # @words = Word.find(params[:id])
-    # binding.pry
     if @word.update(word_params)
       redirect_to words_path, notice: "tweetを編集しました！"
     else
@@ -44,7 +38,6 @@ class WordsController < ApplicationController
   def destroy
     @word.destroy
     redirect_to words_path, notice:"tweetを削除しました！"
-    # @word = Word.find(params[:id])
   end
 
   def confirm
