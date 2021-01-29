@@ -1,18 +1,22 @@
 <h1>tweet一覧</h1>
 <p><%= notice %></p>
-<table>
+<div class="toppage">
+  <table>
   <tr>
     <th>　　　</th>
     <th>内容</th>
+    <th>編集</th>
+    <th>削除</th>
   </tr>
 <% @words.each do |word| %>
   <tr>
     <td><%= word.content %></td>
-    <td><%= link_to 'tweetを確認する', word_path(word.id) %></td>
-    <td><%= link_to "tweetを編集する", edit_word_path(word.id) %></td>
-    <td><%= link_to 'tweetを削除する', word_path(word.id), method: :delete ,data: { confirm: '本当に削除していいですか？' } %></td>
+    <td><%= link_to '確認する', word_path(word.id) %></td>
+    <td><%= link_to "編集する", edit_word_path(word.id) %></td>
+    <td><%= link_to '削除する', word_path(word.id), method: :delete ,data: { confirm: '本当に削除していいですか？' } %></td>
   </tr>
+</div>
 <% end %>
 </table>
+</div>
 <br>
-<%= link_to '新しくtweetする', new_word_path %>

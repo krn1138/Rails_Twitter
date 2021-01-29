@@ -1,11 +1,72 @@
-header {
-  height: 64px;
-  position: absolute;
-  z-index: 1;
-  width: 100%;
-  background-color: blue;
+.header2 {
+  background-color: #0099FF;
+  height: 120px;
+}
+
+ body {
+   margin-top: 0px;
+   margin-left: 0px;
+   margin-right: 0px;
+   margin-bottom: 0px;
+   position: relative;
+   height: 100vh;
+ }
+
+.TwitterClone {
+  font-size: 60px;
+  text-align: center;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  line-height: 3;
+}
+
+.toppage {
+  text-align: center;
+}
+
+.toppage {
+  margin: 2em 650px;
+}
+
+tr {
+  line-height: 60px;
 }
 
 p {
-  color: blue;
+  text-align: center;
+  line-height: 2;
+  font-size: 20px;
+}
+
+.link {
+  text-align: right;
+  position: relative;
+  right: 80px;
+  font-size: 20px;
+}
+
+.footer2 {
+  background-color: #0099FF;
+  height: 120px;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+
+h2,h3,.button {
+  text-align: center;
+  line-height: 5;
+}
+
+.henshu,.newform {
+  text-align: center;
+  line-height: 3;
+}
+
+.tweetback {
+  position: relative;
+  top: 10px;
 }

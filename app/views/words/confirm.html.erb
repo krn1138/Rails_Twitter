@@ -2,6 +2,8 @@
 <%= form_with(model: @word, local: true) do |form| %>
   <%= form.hidden_field :content %>
   <p>本文:<%= @word.content %></p>
+<div class="button">
   <%= form.submit  "登録する" %>
   <%= form.submit "戻る", name: 'back' %>
 <% end %>
+</div>
