@@ -14,7 +14,18 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', '>= 1.1.0', require: false
 
+gem 'dotenv-rails' 
+gem 'unicorn' 
+gem 'mini_racer', platforms: :ruby
+
 group :development, :test do
+
+  gem 'capistrano', '3.6.0' 
+  gem 'capistrano-bundler'
+  gem 'capistrano-rails'
+  gem 'capistrano-rbenv'
+  gem 'capistrano3-unicorn'
+
   gem 'pry-rails'
   gem 'better_errors'
   gem 'binding_of_caller'
